@@ -1,0 +1,27 @@
+url: www.baidu.com
+server:
+  port: 8080
+  session-timeout: 30
+  tomcat:
+    max-threads: 500
+    uri-encoding: UTF-8
+spring:
+  datasource:
+    name: mydb
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/testdata
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    minIdle: 1
+    maxActive: 2
+    initialSize: 1
+    timeBetweenEvictionRunsMillis: 3000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 'x' FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+mybatis:
+  mapperLocations: classpath*:/mapper/*.xml
+  typeAliasesPackage: name.nvshen.user.bean

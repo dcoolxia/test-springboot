@@ -18,6 +18,8 @@ public class UserController {
     @RequestMapping("/add")
     public ResultVO addUser() {
         User user = new User();
+        user.setName("zhangsan");
+        user.setLevel(1);
         ResultVO vo = userService.addUser(user);
         return vo;
     }
