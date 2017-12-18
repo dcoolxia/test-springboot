@@ -5,6 +5,9 @@ server:
   tomcat:
     max-threads: 500
     uri-encoding: UTF-8
+logging:
+  config: classpath:logback.xml
+  path: D:/log
 spring:
   datasource:
     name: mydb
