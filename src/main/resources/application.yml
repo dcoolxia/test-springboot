@@ -30,7 +30,7 @@ spring:
       prefix: /WEB-INF #页面默认前缀目录  
       suffix: .jsp #响应页面默认后缀
 mybatis:
-  mapperLocations: classpath*:/mapper/*.xml
+  mapperLocations: classpath:name/nvshen/*/dao/*.xml
   typeAliasesPackage: name.nvshen.user.bean
 #mapperLocations：
 #它表示我们的Mapper文件存放的位置，当我们的Mapper文件跟对应的Mapper接口处于同一位置的时候可以不用指定该属性的值。
