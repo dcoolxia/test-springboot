@@ -1,4 +1,4 @@
-package name.nvshen.first;
+package name.nvshen;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

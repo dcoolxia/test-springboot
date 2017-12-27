@@ -8,7 +8,7 @@ import name.nvshen.user.bean.User;
 import name.nvshen.user.dao.UserMapper;
 import name.nvshen.user.service.UserService;
 
-@Service
+@Service("userService")
 public class UserServiceImpl implements UserService {
 
     @Autowired

@@ -4,7 +4,7 @@
 
 	<insert id="insertUser" parameterType="name.nvshen.user.bean.User">
 		insert into t_user(name,level)
-		values(#{name,jdbcType=NUMERIC}, #{level,jdbcType=INTEGER})
+		values(#{name,jdbcType=VARCHAR}, #{level,jdbcType=INTEGER})
 	</insert>
 
 </mapper>
